@@ -134,7 +134,7 @@ value="
 .option .savecurrents
 .control
 save all
-dc VG 0.05 1.65 0.1m 
+dc VG 0.05 3 0.1m 
 ** remove zero length vectors to prevent write errors
 remzerovec
 write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_03v3_SVT/gmid_nmos_03v3_svt_tb.raw

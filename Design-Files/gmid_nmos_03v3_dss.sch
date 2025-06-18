@@ -18,13 +18,13 @@ N 590 -1980 640 -1980 {
 lab=VG}
 N 790 -1980 840 -1980 {
 lab=VG}
-N 980 -2460 980 -2400 {
+N 980 -2330 980 -2270 {
 lab=VG}
-N 1070 -2460 1070 -2400 {
+N 1070 -2330 1070 -2270 {
 lab=VD}
-N 980 -2340 980 -2280 {
+N 980 -2210 980 -2150 {
 lab=GND}
-N 1070 -2340 1070 -2280 {
+N 1070 -2210 1070 -2150 {
 lab=GND}
 N 990 -1980 1040 -1980 {
 lab=VG}
@@ -122,10 +122,10 @@ N 2760 -1980 2760 -1950 {lab=GND}
 C {devices/lab_pin.sym} 590 -1980 0 0 {name=p1 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 790 -1980 0 0 {name=p2 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 680 -2080 0 0 {name=p3 sig_type=std_logic lab=VD}
-C {devices/vsource.sym} 980 -2370 0 0 {name=VG value=1.65 .savecurrent=false}
-C {devices/vsource.sym} 1070 -2370 0 0 {name=VD value=1.65 .savecurrent=false}
-C {devices/lab_pin.sym} 980 -2460 0 0 {name=p4 sig_type=std_logic lab=VG}
-C {devices/lab_pin.sym} 1070 -2460 0 0 {name=p5 sig_type=std_logic lab=VD}
+C {devices/vsource.sym} 980 -2240 0 0 {name=VG value=1.65 .savecurrent=false}
+C {devices/vsource.sym} 1070 -2240 0 0 {name=VD value=1.65 .savecurrent=false}
+C {devices/lab_pin.sym} 980 -2330 0 0 {name=p4 sig_type=std_logic lab=VG}
+C {devices/lab_pin.sym} 1070 -2330 0 0 {name=p5 sig_type=std_logic lab=VD}
 C {devices/code_shown.sym} 30 -2290 0 0 {name=NGSPICE
 only_toplevel=true
 value="
@@ -134,7 +134,7 @@ value="
 .option .savecurrents
 .control
 save all
-dc VG 0.05 1.65 0.1m 
+dc VG 0.05 3 0.1m 
 ** remove zero length vectors to prevent write errors
 remzerovec
 write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_03v3_DSS/gmid_nmos_03v3_dss_tb.raw
@@ -173,8 +173,8 @@ write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_03v3_DSS/gmid_nmos_03v3_dss_tb.raw
 "
 }
 C {devices/gnd.sym} 1590 -1900 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 980 -2280 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 1070 -2280 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 980 -2150 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 1070 -2150 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 990 -1980 0 0 {name=p6 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 1170 -1980 0 0 {name=p7 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 1340 -1980 0 0 {name=p8 sig_type=std_logic lab=VG}

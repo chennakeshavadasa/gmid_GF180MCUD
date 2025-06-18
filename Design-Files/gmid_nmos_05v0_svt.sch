@@ -186,7 +186,7 @@ value="
 .option .savecurrents
 .control
 save all
-dc VG 0.05 2.5 0.1m 
+dc VG 0.05 5 0.1m 
 ** remove zero length vectors to prevent write errors
 remzerovec
 write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_05v0_SVT/gmid_nmos_05v0_svt_tb.raw
@@ -264,8 +264,8 @@ C {devices/lab_pin.sym} 2490 -1840 0 0 {name=p14 sig_type=std_logic lab=VG}
 C {devices/ammeter.sym} 2580 -1900 0 0 {name=VD11 .savecurrent=true}
 C {devices/lab_pin.sym} 2700 -1840 0 0 {name=p15 sig_type=std_logic lab=VG}
 C {devices/ammeter.sym} 2790 -1900 0 0 {name=VD12 .savecurrent=true}
-C {devices/code.sym} 350 -2340 0 0 {name=SAVE_COMMANDS only_toplevel=false value="
-.save @m.xm1.m0[gm]
+C {devices/code.sym} 350 -2340 0 0 {name=SAVE_COMMANDS only_toplevel=false value=
+".save @m.xm1.m0[gm]
 .save @m.xm1.m0[vth]
 .save @m.xm1.m0[gds]
 .save @m.xm1.m0[cgg]
@@ -337,6 +337,42 @@ C {devices/code.sym} 350 -2340 0 0 {name=SAVE_COMMANDS only_toplevel=false value
 .save @m.xm12.m0[cgg]
 .save @m.xm12.m0[cgs]
 .save @m.xm12.m0[cgd]
+.save @m.xm13.m0[gm]
+.save @m.xm13.m0[vth]
+.save @m.xm13.m0[gds]
+.save @m.xm13.m0[cgg]
+.save @m.xm13.m0[cgs]
+.save @m.xm13.m0[cgd]
+.save @m.xm14.m0[gm]
+.save @m.xm14.m0[vth]
+.save @m.xm14.m0[gds]
+.save @m.xm14.m0[cgg]
+.save @m.xm14.m0[cgs]
+.save @m.xm14.m0[cgd]
+.save @m.xm15.m0[gm]
+.save @m.xm15.m0[vth]
+.save @m.xm15.m0[gds]
+.save @m.xm15.m0[cgg]
+.save @m.xm15.m0[cgs]
+.save @m.xm15.m0[cgd]
+.save @m.xm16.m0[gm]
+.save @m.xm16.m0[vth]
+.save @m.xm16.m0[gds]
+.save @m.xm16.m0[cgg]
+.save @m.xm16.m0[cgs]
+.save @m.xm16.m0[cgd]
+.save @m.xm17.m0[gm]
+.save @m.xm17.m0[vth]
+.save @m.xm17.m0[gds]
+.save @m.xm17.m0[cgg]
+.save @m.xm17.m0[cgs]
+.save @m.xm17.m0[cgd]
+.save @m.xm18.m0[gm]
+.save @m.xm18.m0[vth]
+.save @m.xm18.m0[gds]
+.save @m.xm18.m0[cgg]
+.save @m.xm18.m0[cgs]
+.save @m.xm18.m0[cgd]
 "}
 C {devices/title.sym} 1430 -2240 0 0 {name=l4 author="Nithin Purushothama"}
 C {devices/code.sym} 520 -2340 0 0 {name=MODELS only_toplevel=true
