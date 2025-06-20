@@ -38,7 +38,8 @@ for i in range(18):
                         vov_value = Vgs - Vth
 
                         # Apply the condition Vov > 0
-                        #if vov_value > 0:
+                    
+                    if vov_value > -0.275:
                         vgs[i].append(Vgs)
                         Vov[i].append(Vgs - Vth)
                         gm_id[i].append(gm / id_val)

@@ -6,18 +6,18 @@ import numpy as np
 path = r"C:\Users\NITHIN P\OneDrive\Desktop\Chipathon\gmid_GF180MCUD\NMOS_03v3_SVT\NMOS_03v3_SVT\\" # Please provide your path file
 
 # Initialize lists for storing results
-vgs = [[] for _ in range(13)]
-gm_id = [[] for _ in range(13)]
-gm_gds = [[] for _ in range(13)]
-id_W = [[] for _ in range(13)]
-ft = [[] for _ in range(13)]      # ft = gm / Cgg
-cgd_cgg = [[] for _ in range(13)] # Cgd / Cgg
-cgs_cgg = [[] for _ in range(13)] # Cgs / Cgg
-Vov = [[] for _ in range(13)]     # Vov
+vgs = [[] for _ in range(12)]
+gm_id = [[] for _ in range(12)]
+gm_gds = [[] for _ in range(12)]
+id_W = [[] for _ in range(12)]
+ft = [[] for _ in range(12)]      # ft = gm / Cgg
+cgd_cgg = [[] for _ in range(12)] # Cgd / Cgg
+cgs_cgg = [[] for _ in range(12)] # Cgs / Cgg
+Vov = [[] for _ in range(12)]     # Vov
 W = 3e-6  # SKY130 W
 
 # Read data from the text files
-for i in range(13):
+for i in range(12):
     filename = path + "gmid_nmos_" + str(i + 1) + "_nfet_03v3_svt_tb.txt"
     try:
         with open(filename, 'r') as fID:
@@ -38,7 +38,7 @@ for i in range(13):
                         vov_value = Vgs - Vth
 
                         # Apply the condition Vov > 0
-                        #if vov_value > 0:
+                    if vov_value > -0.325:
                         vgs[i].append(Vgs)
                         Vov[i].append(Vgs - Vth)
                         gm_id[i].append(gm / id_val)
@@ -132,30 +132,30 @@ def plot_with_checkboxes(x_data, y_data, x_label, y_label, title):
     plt.show()
 
 # Plot gm/id versus Vgs
-plot_with_checkboxes(vgs, gm_id, 'Vgs', 'gm/id', 'NMOS-3.3V gm/id versus Vgs')
+plot_with_checkboxes(vgs, gm_id, 'Vgs', 'gm/id', 'NMOS-3.3V SVT gm/id versus Vgs')
 
 # Plot gm/id versus Vov
-plot_with_checkboxes(Vov, gm_id, 'Vov', 'gm/id', 'NMOS-3.3V gm/id versus Vov')
+plot_with_checkboxes(Vov, gm_id, 'Vov', 'gm/id', 'NMOS-3.3V SVT gm/id versus Vov')
 
 # Plot gm/gds versus gm/id
-plot_with_checkboxes(gm_id, gm_gds, 'gm/id', 'gm/gds', 'NMOS-3.3V gm/gds versus gm/id')
+plot_with_checkboxes(gm_id, gm_gds, 'gm/id', 'gm/gds', 'NMOS-3.3V SVT gm/gds versus gm/id')
 
 # Plot id/W versus gm/id
-plot_with_checkboxes(gm_id, id_W, 'gm/id', 'id/W', 'NMOS-3.3V id/W versus gm/id')
+plot_with_checkboxes(gm_id, id_W, 'gm/id', 'id/W', 'NMOS-3.3V SVT id/W versus gm/id')
 
 # Plot ft = gm / Cgg versus gm/id
-plot_with_checkboxes(gm_id, ft, 'gm/id', 'ft (Hz)', 'NMOS-3.3V ft versus gm/id')
+plot_with_checkboxes(gm_id, ft, 'gm/id', 'ft (Hz)', 'NMOS-3.3V SVT ft versus gm/id')
 
 # Plot Cgd / Cgg versus gm/id
-plot_with_checkboxes(gm_id, cgd_cgg, 'gm/id', 'Cgd / Cgg', 'NMOS-3.3VCgd / Cgg versus gm/id')
+plot_with_checkboxes(gm_id, cgd_cgg, 'gm/id', 'Cgd / Cgg', 'NMOS-3.3V SVT Cgd / Cgg versus gm/id')
 
 # Plot Cgs / Cgg versus gm/id
-plot_with_checkboxes(gm_id, cgs_cgg, 'gm/id', 'Cgs / Cgg', 'NMOS-3.3V Cgs / Cgg versus gm/id')
+plot_with_checkboxes(gm_id, cgs_cgg, 'gm/id', 'Cgs / Cgg', 'NMOS-3.3V SVT Cgs / Cgg versus gm/id')
 
 # Combined Plot
 def plot_all_together():
     fig, axs = plt.subplots(3, 3, figsize=(15, 10))
-    fig.suptitle("LV-NMOS-1.65V gm/id plots", fontsize=16, fontweight='bold')  # Title added
+    fig.suptitle("NMOS-3.3V SVT gm/id plots", fontsize=16, fontweight='bold')  # Title added
     plot_data = [
         (vgs, gm_id, 'Vgs', 'gm/id'),
         (Vov, gm_id, 'Vov', 'gm/id'),
