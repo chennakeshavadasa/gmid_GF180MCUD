@@ -3,7 +3,7 @@ from matplotlib.widgets import CheckButtons  # type: ignore
 import numpy as np
 
 # Define the path to the directory
-path = r"C:\Users\NITHIN P\OneDrive\Desktop\Chipathon\gmid_GF180MCUD\PMOS_03v3_DSS\PMOS_03v3_DSS\\"
+path = r"C:\Users\NITHIN P\OneDrive\Desktop\Chipathon\gmid Data\PMOS_03v3_DSS\PMOS_03v3_DSS\\"
 
 # Initialize lists for storing results
 vgs = [[] for _ in range(12)]
