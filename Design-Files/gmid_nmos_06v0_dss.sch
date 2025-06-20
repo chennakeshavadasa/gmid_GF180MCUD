@@ -189,7 +189,7 @@ save all
 dc VG 0.05 6 0.1m 
 ** remove zero length vectors to prevent write errors
 remzerovec
-write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v6_DSS/gmid_nmos_03v3_dss_tb.raw
+write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_06v0_dss_tb.raw
 
 plot @m.xm1.m0[gm]
 plot @m.xm2.m0[gm]
@@ -211,28 +211,28 @@ plot @m.xm17.m0[gm]
 plot @m.xm18.m0[gm]
 
 
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_1_nfet_03v3_dss_tb.txt @m.xm1.m0[gm] i(VD1) @m.xm1.m0[vth] @m.xm1.m0[gds] @m.xm1.m0[cgg] @m.xm1.m0[cgs] @m.xm1.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_2_nfet_03v3_dss_tb.txt @m.xm2.m0[gm] i(VD2) @m.xm2.m0[vth] @m.xm2.m0[gds] @m.xm2.m0[cgg] @m.xm2.m0[cgs] @m.xm2.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_3_nfet_03v3_dss_tb.txt @m.xm3.m0[gm] i(VD3) @m.xm3.m0[vth] @m.xm3.m0[gds] @m.xm3.m0[cgg] @m.xm3.m0[cgs] @m.xm3.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_4_nfet_03v3_dss_tb.txt @m.xm4.m0[gm] i(VD4) @m.xm4.m0[vth] @m.xm4.m0[gds] @m.xm4.m0[cgg] @m.xm4.m0[cgs] @m.xm4.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_5_nfet_03v3_dss_tb.txt @m.xm5.m0[gm] i(VD5) @m.xm5.m0[vth] @m.xm5.m0[gds] @m.xm5.m0[cgg] @m.xm5.m0[cgs] @m.xm5.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_6_nfet_03v3_dss_tb.txt @m.xm6.m0[gm] i(VD6) @m.xm6.m0[vth] @m.xm6.m0[gds] @m.xm6.m0[cgg] @m.xm6.m0[cgs] @m.xm6.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_7_nfet_03v3_dss_tb.txt @m.xm7.m0[gm] i(VD7) @m.xm7.m0[vth] @m.xm7.m0[gds] @m.xm7.m0[cgg] @m.xm7.m0[cgs] @m.xm7.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_8_nfet_03v3_dss_tb.txt @m.xm8.m0[gm] i(VD8) @m.xm8.m0[vth] @m.xm8.m0[gds] @m.xm8.m0[cgg] @m.xm8.m0[cgs] @m.xm8.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_9_nfet_03v3_dss_tb.txt @m.xm9.m0[gm] i(VD9) @m.xm9.m0[vth] @m.xm9.m0[gds] @m.xm9.m0[cgg] @m.xm9.m0[cgs] @m.xm9.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_10_nfet_03v3_dss_tb.txt @m.xm10.m0[gm] i(VD10) @m.xm10.m0[vth] @m.xm10.m0[gds] @m.xm10.m0[cgg] @m.xm10.m0[cgs] @m.xm10.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_11_nfet_03v3_dss_tb.txt @m.xm11.m0[gm] i(VD11) @m.xm11.m0[vth] @m.xm11.m0[gds] @m.xm11.m0[cgg] @m.xm11.m0[cgs] @m.xm11.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_12_nfet_03v3_dss_tb.txt @m.xm12.m0[gm] i(VD12) @m.xm12.m0[vth] @m.xm12.m0[gds] @m.xm12.m0[cgg] @m.xm12.m0[cgs] @m.xm12.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_13_nfet_03v3_dss_tb.txt @m.xm13.m0[gm] i(VD13) @m.xm13.m0[vth] @m.xm13.m0[gds] @m.xm13.m0[cgg] @m.xm13.m0[cgs] @m.xm13.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_14_nfet_03v3_dss_tb.txt @m.xm14.m0[gm] i(VD14) @m.xm14.m0[vth] @m.xm14.m0[gds] @m.xm14.m0[cgg] @m.xm14.m0[cgs] @m.xm14.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_15_nfet_03v3_dss_tb.txt @m.xm15.m0[gm] i(VD15) @m.xm15.m0[vth] @m.xm15.m0[gds] @m.xm15.m0[cgg] @m.xm15.m0[cgs] @m.xm15.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_16_nfet_03v3_dss_tb.txt @m.xm16.m0[gm] i(VD13) @m.xm16.m0[vth] @m.xm16.m0[gds] @m.xm16.m0[cgg] @m.xm16.m0[cgs] @m.xm16.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_17_nfet_03v3_dss_tb.txt @m.xm17.m0[gm] i(VD14) @m.xm17.m0[vth] @m.xm17.m0[gds] @m.xm17.m0[cgg] @m.xm17.m0[cgs] @m.xm17.m0[cgd]
-wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_18_nfet_03v3_dss_tb.txt @m.xm18.m0[gm] i(VD15) @m.xm18.m0[vth] @m.xm18.m0[gds] @m.xm18.m0[cgg] @m.xm18.m0[cgs] @m.xm18.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_1_nfet_06v0_dss_tb.txt @m.xm1.m0[gm] i(VD1) @m.xm1.m0[vth] @m.xm1.m0[gds] @m.xm1.m0[cgg] @m.xm1.m0[cgs] @m.xm1.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_2_nfet_06v0_dss_tb.txt @m.xm2.m0[gm] i(VD2) @m.xm2.m0[vth] @m.xm2.m0[gds] @m.xm2.m0[cgg] @m.xm2.m0[cgs] @m.xm2.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_3_nfet_06v0_dss_tb.txt @m.xm3.m0[gm] i(VD3) @m.xm3.m0[vth] @m.xm3.m0[gds] @m.xm3.m0[cgg] @m.xm3.m0[cgs] @m.xm3.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_4_nfet_06v0_dss_tb.txt @m.xm4.m0[gm] i(VD4) @m.xm4.m0[vth] @m.xm4.m0[gds] @m.xm4.m0[cgg] @m.xm4.m0[cgs] @m.xm4.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_5_nfet_06v0_dss_tb.txt @m.xm5.m0[gm] i(VD5) @m.xm5.m0[vth] @m.xm5.m0[gds] @m.xm5.m0[cgg] @m.xm5.m0[cgs] @m.xm5.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_6_nfet_06v0_dss_tb.txt @m.xm6.m0[gm] i(VD6) @m.xm6.m0[vth] @m.xm6.m0[gds] @m.xm6.m0[cgg] @m.xm6.m0[cgs] @m.xm6.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_7_nfet_06v0_dss_tb.txt @m.xm7.m0[gm] i(VD7) @m.xm7.m0[vth] @m.xm7.m0[gds] @m.xm7.m0[cgg] @m.xm7.m0[cgs] @m.xm7.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_8_nfet_06v0_dss_tb.txt @m.xm8.m0[gm] i(VD8) @m.xm8.m0[vth] @m.xm8.m0[gds] @m.xm8.m0[cgg] @m.xm8.m0[cgs] @m.xm8.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_9_nfet_06v0_dss_tb.txt @m.xm9.m0[gm] i(VD9) @m.xm9.m0[vth] @m.xm9.m0[gds] @m.xm9.m0[cgg] @m.xm9.m0[cgs] @m.xm9.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_10_nfet_06v0_dss_tb.txt @m.xm10.m0[gm] i(VD10) @m.xm10.m0[vth] @m.xm10.m0[gds] @m.xm10.m0[cgg] @m.xm10.m0[cgs] @m.xm10.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_11_nfet_06v0_dss_tb.txt @m.xm11.m0[gm] i(VD11) @m.xm11.m0[vth] @m.xm11.m0[gds] @m.xm11.m0[cgg] @m.xm11.m0[cgs] @m.xm11.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_12_nfet_06v0_dss_tb.txt @m.xm12.m0[gm] i(VD12) @m.xm12.m0[vth] @m.xm12.m0[gds] @m.xm12.m0[cgg] @m.xm12.m0[cgs] @m.xm12.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_13_nfet_06v0_dss_tb.txt @m.xm13.m0[gm] i(VD13) @m.xm13.m0[vth] @m.xm13.m0[gds] @m.xm13.m0[cgg] @m.xm13.m0[cgs] @m.xm13.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_14_nfet_06v0_dss_tb.txt @m.xm14.m0[gm] i(VD14) @m.xm14.m0[vth] @m.xm14.m0[gds] @m.xm14.m0[cgg] @m.xm14.m0[cgs] @m.xm14.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_15_nfet_06v0_dss_tb.txt @m.xm15.m0[gm] i(VD15) @m.xm15.m0[vth] @m.xm15.m0[gds] @m.xm15.m0[cgg] @m.xm15.m0[cgs] @m.xm15.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_16_nfet_06v0_dss_tb.txt @m.xm16.m0[gm] i(VD13) @m.xm16.m0[vth] @m.xm16.m0[gds] @m.xm16.m0[cgg] @m.xm16.m0[cgs] @m.xm16.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_17_nfet_06v0_dss_tb.txt @m.xm17.m0[gm] i(VD14) @m.xm17.m0[vth] @m.xm17.m0[gds] @m.xm17.m0[cgg] @m.xm17.m0[cgs] @m.xm17.m0[cgd]
+wrdata /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_18_nfet_06v0_dss_tb.txt @m.xm18.m0[gm] i(VD15) @m.xm18.m0[vth] @m.xm18.m0[gds] @m.xm18.m0[cgg] @m.xm18.m0[cgs] @m.xm18.m0[cgd]
 set appendwrite
 op
 remzerovec
-write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v6_DSS/gmid_nmos_03v3_dss_tb.raw
+write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_DSS/gmid_nmos_06v0_dss_tb.raw
 **quit 0
 .endc
 "

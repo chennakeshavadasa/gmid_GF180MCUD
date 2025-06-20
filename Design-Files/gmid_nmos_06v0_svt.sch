@@ -174,8 +174,8 @@ N 4040 -730 4230 -730 {lab=GND}
 C {devices/lab_pin.sym} 870 -810 0 0 {name=p1 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 1070 -810 0 0 {name=p2 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 960 -910 0 0 {name=p3 sig_type=std_logic lab=VD}
-C {devices/vsource.sym} 1230 -1340 0 0 {name=VG value=2.5 .savecurrent=false}
-C {devices/vsource.sym} 1320 -1340 0 0 {name=VD value=2.5 .savecurrent=false}
+C {devices/vsource.sym} 1230 -1340 0 0 {name=VG value=3 .savecurrent=false}
+C {devices/vsource.sym} 1320 -1340 0 0 {name=VD value=3 .savecurrent=false}
 C {devices/lab_pin.sym} 1230 -1430 0 0 {name=p4 sig_type=std_logic lab=VG}
 C {devices/lab_pin.sym} 1320 -1430 0 0 {name=p5 sig_type=std_logic lab=VD}
 C {devices/code_shown.sym} 480 -1150 0 0 {name=NGSPICE
@@ -186,7 +186,7 @@ value="
 .option .savecurrents
 .control
 save all
-dc VG 0.05 5 0.1m 
+dc VG 0.05 6 0.1m 
 ** remove zero length vectors to prevent write errors
 remzerovec
 write /foss/designs/PDK-CHAR/GF180-MCUD/NMOS_06v0_SVT/gmid_NMOS_06v0_SVT_tb.raw
