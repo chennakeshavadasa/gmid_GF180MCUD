@@ -59,32 +59,6 @@ All Vth₀ values use max-Gm extraction at Vd = 0.05V, T = 25°C.
 
 ---
 
-## How to Deploy (GitHub Pages)
-
-1. **Fork or create a new repo** on GitHub (e.g. `gf180mcu-gmid-explorer`)
-
-2. **Upload the files** — just `index.html` and this `README.md` are needed:
-   ```
-   git clone https://github.com/<your-username>/gf180mcu-gmid-explorer
-   cd gf180mcu-gmid-explorer
-   # copy index.html and README.md here
-   git add .
-   git commit -m "Initial deploy"
-   git push
-   ```
-
-3. **Enable GitHub Pages:**
-   - Go to repo → Settings → Pages
-   - Source: `Deploy from a branch`
-   - Branch: `main` / `(root)`
-   - Save
-
-4. Your site will be live at `https://<your-username>.github.io/gf180mcu-gmid-explorer` within ~1 minute.
-
-> **Note:** The entire tool is self-contained in `index.html` (~3.6MB). All simulation data is embedded as base64 — no server, no backend, no API calls needed.
-
----
-
 ## Data Source
 
 Simulation data from:  
