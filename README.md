@@ -110,7 +110,7 @@ Apache 2.0 licensed. © GlobalFoundries PDK Authors.
 The tool code and layout are released under **MIT License**.  
 Simulation data: see [original repo license](https://github.com/Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD).  
 PDK specs: Apache 2.0 © GlobalFoundries PDK Authors.
-
+ 
 ---
 
 ## Contributing
