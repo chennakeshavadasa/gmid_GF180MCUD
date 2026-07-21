@@ -175,7 +175,7 @@
   .pill-p { background: rgba(124,58,237,0.2); color: #a78bfa; }
 
   .plot-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
-  .tab-btn { padding: 5px 6px; border: 1px solid var(--border); background: transparent; color: var(--muted); font-family: inherit; font-size: 0.62rem; cursor: pointer; border-radius: 3px; transition: all 0.15s; text-align: center; }
+  .tab-btn { padding:5px 10px; border:1px solid transparent; background:transparent; color:var(--muted); font-family:inherit; font-size:0.68rem; cursor:pointer; border-radius:4px; transition:all 0.14s; white-space:nowrap; letter-spacing:0.02em; }
   .tab-btn:hover { border-color: var(--accent); color: var(--accent); }
   .tab-btn.active { background: rgba(0,212,255,0.08); border-color: var(--accent); color: var(--accent); }
 
@@ -557,19 +557,7 @@
       <div class="section-label">Device</div>
       <div class="device-grid" id="deviceGrid"></div>
     </div>
-    <div>
-      <div class="section-label">Plot</div>
-      <div class="plot-tabs" id="plotTabs">
-        <button class="tab-btn active" data-plot="gmid_vgs">gm/ID vs Vgs</button>
-        <button class="tab-btn" data-plot="gmid_vov">gm/ID vs Vov</button>
-        <button class="tab-btn" data-plot="gmgds_gmid">gm/gds vs gm/ID</button>
-        <button class="tab-btn" data-plot="idW_gmid">ID/W vs gm/ID</button>
-        <button class="tab-btn" data-plot="ft_gmid">fT vs gm/ID</button>
-        <button class="tab-btn" data-plot="cgdcgg_gmid">Cgd/Cgg</button>
-        <button class="tab-btn" data-plot="cgscgg_gmid">Cgs/Cgg</button>
-        <button class="tab-btn" data-plot="overview">Overview ▦</button>
-      </div>
-    </div>
+
     <div>
       <div class="section-label">Length Filter</div>
       <div class="len-ctrl">
@@ -590,6 +578,16 @@
   </aside>
 
   <div class="plot-area">
+    <div class="plot-tabs" id="plotTabs">
+      <button class="tab-btn active" data-plot="gmid_vgs">gm/ID vs Vgs</button>
+      <button class="tab-btn" data-plot="gmid_vov">gm/ID vs Vov</button>
+      <button class="tab-btn" data-plot="gmgds_gmid">gm/gds vs gm/ID</button>
+      <button class="tab-btn" data-plot="idW_gmid">ID/W vs gm/ID</button>
+      <button class="tab-btn" data-plot="ft_gmid">fT vs gm/ID</button>
+      <button class="tab-btn" data-plot="cgdcgg_gmid">Cgd/Cgg vs gm/ID</button>
+      <button class="tab-btn" data-plot="cgscgg_gmid">Cgs/Cgg vs gm/ID</button>
+      <button class="tab-btn" data-plot="overview">⊞ Overview</button>
+    </div>
     <div class="plot-toolbar">
       <div>
         <div class="plot-title" id="plotTitle">gm/ID vs Vgs</div>
