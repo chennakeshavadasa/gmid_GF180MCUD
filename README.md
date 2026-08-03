@@ -10,7 +10,7 @@ An interactive, browser-based gm/ID characterisation tool for the **GlobalFoundr
 
 This tool lets you visually explore the gm/ID characteristics of all 9 MOSFET variants in the GF180MCU PDK directly in your browser — no Python, no MATLAB, no local install required.
 
-It is derived from the simulation data in the [Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD](https://github.com/Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD) repository, converted into an interactive Plotly-based dashboard with a full PDK reference panel.
+It is derived from the simulation data in the [chennakeshavadasa/gmid_GF180MCU-D](https://github.com/chennakeshavadasa/gmid_GF180MCU-D) repository, converted into an interactive Plotly-based dashboard with a full PDK reference panel.
 
 ---
 
@@ -62,7 +62,7 @@ All Vth₀ values use max-Gm extraction at Vd = 0.05V, T = 25°C.
 ## Data Source
 
 Simulation data from:  
-**[Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD](https://github.com/Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD)**  
+**[chennakeshavadasa/gmid_GF180MCU-D](https://github.com/chennakeshavadasa/gmid_GF180MCU-D)**  
 GF180MCU gm/ID characterisation — ngspice DC sweep results across 9 device variants and up to 18 channel lengths per variant.
 
 PDK electrical specifications from:  
@@ -82,7 +82,7 @@ Apache 2.0 licensed. © GlobalFoundries PDK Authors.
 ## License
 
 The tool code and layout are released under **MIT License**.  
-Simulation data: see [original repo license](https://github.com/Low-Power-Circuits-IoT-Systems-Group/gmid_GF180MCUD).  
+Simulation data: see [original repo license](https://github.com/chennakeshavadasa/gmid_GF180MCU-D).  
 PDK specs: Apache 2.0 © GlobalFoundries PDK Authors.
  
 ---
