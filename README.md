@@ -2,7 +2,7 @@
 
 An interactive, browser-based gm/ID characterisation tool for the **GlobalFoundries GF180MCU** open-source 0.18µm CMOS PDK.
 
-🔗 **Live demo:** [https://chennakeshavadasa.github.io/gmid_GF180MCUD/](https://chennakeshavadasa.github.io/gmid_GF180MCUD/)
+🔗 **Live demo:** [https://nithinpuru.github.io/gmid/gf180mcu-d/](https://nithinpuru.github.io/gmid/gf180mcu-d/)
 
 ---
 
