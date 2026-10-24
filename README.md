@@ -2,13 +2,29 @@
 
 An interactive, browser-based gm/ID characterisation tool for the **GlobalFoundries GF180MCU** open-source 0.18µm CMOS PDK.
 
-🔗 **Live demo:** [https://nithinpuru.github.io/gmid/gf180mcu-d/](https://nithinpuru.github.io/gmid/gf180mcu-d/)
+## Website
+
+Open the tool in your browser. Click the link, or copy the URL:
+
+**[Open the GF180MCU-D gm/ID Explorer](https://nithinpuru.github.io/gmid/gf180mcu-d/)**
+
+```
+https://nithinpuru.github.io/gmid/gf180mcu-d/
+```
+
+All PDKs (SKY130A, GF180MCU-D, IHP SG13G2):
+
+**[Open the gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/)**
+
+```
+https://nithinpuru.github.io/gmid/
+```
 
 ---
 
 ## What is this?
 
-This tool lets you visually explore the gm/ID characteristics of all 9 MOSFET variants in the GF180MCU PDK directly in your browser — no Python, no MATLAB, no local install required.
+This tool lets you explore the gm/ID characteristics of all 9 MOSFET variants in the GF180MCU PDK directly in your browser. You don't need Python, MATLAB or a local install.
 
 It is derived from the simulation data in the [chennakeshavadasa/gmid_GF180MCU-D](https://github.com/chennakeshavadasa/gmid_GF180MCU-D) repository, converted into an interactive Plotly-based dashboard with a full PDK reference panel.
 
@@ -16,7 +32,7 @@ It is derived from the simulation data in the [chennakeshavadasa/gmid_GF180MCU-D
 
 ## Features
 
-### 📋 PDK Reference Panel
+### PDK Reference Panel
 - Full explanation of all 9 MOSFET flavours (nfet_03v3, pfet_03v3, DSS/SAB variants, 5V/6V devices)
 - Official EP electrical specifications from [gf180mcu-pdk.rtfd.io](https://gf180mcu-pdk.rtfd.io): Vth₀, Idsat, Ioff, SubVt slope, BVDSS — slow/typical/fast corners
 - Explanation of what DSS (Drain-Side Silicide Block / SAB) is and when to use it
@@ -24,7 +40,7 @@ It is derived from the simulation data in the [chennakeshavadasa/gmid_GF180MCU-D
 - Instance parameter limits (Wmin, Wmax, Lmin, Lmax) for every device
 - Designer's quick-reference cheatsheet
 
-### 📈 gm/ID Explorer
+### gm/ID Explorer
 - **9 device variants:** NMOS/PMOS, 3.3V/5V/6V, SVT/DSS
 - **7 interactive plots:**
   - gm/ID vs Vgs
@@ -57,6 +73,8 @@ It is derived from the simulation data in the [chennakeshavadasa/gmid_GF180MCU-D
 
 All Vth₀ values use max-Gm extraction at Vd = 0.05V, T = 25°C.
 
+Lmin above is the PDK limit. The simulated lengths are 0.28–3 µm for the 3.3V devices and 0.75–5 µm for the 5V/6V devices. For the 6V PMOS devices, only 0.75–4.25 µm is shown, trimmed to the inversion side of the gm/ID peak, because the longest lengths showed simulation artifacts.
+
 ---
 
 ## Data Source
@@ -73,9 +91,11 @@ Apache 2.0 licensed. © GlobalFoundries PDK Authors.
 
 ## Technical Notes
 
-- Data is downsampled to 300 points per curve (from ~30k–60k raw simulation points) using uniform decimation — visually lossless for these monotonic characteristics
+- Data is downsampled to 300 points per curve (from ~30k–60k raw simulation points) using uniform decimation. This is visually lossless for these monotonic characteristics.
+- Points with non-positive Id, gm, gds or Cgg are dropped before plotting.
+- `regenerate_website.py` rebuilds the data embedded in `index.html` from the raw simulation files. Set `DATA_ROOT`, `HTML_IN` and `HTML_OUT` at the top before running it (requires `numpy` and `scipy`).
 - Plotting engine: [Plotly.js](https://plotly.com/javascript/) v2.27.0 (loaded from CDN)
-- No frameworks, no build step — plain HTML/CSS/JS
+- No frameworks and no build step: plain HTML/CSS/JS in a single `index.html` (~3.7 MB)
 
 ---
 
@@ -97,4 +117,11 @@ PRs welcome for:
 
 ---
 
-*Built for the open-source silicon community. If you find it useful, ⭐ the repo.*
+## Related
+
+- [gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/): SKY130A, GF180MCU-D and IHP SG13G2
+- [SKY130 gm/ID Explorer](https://github.com/chennakeshavadasa/gmid_SKY130A): the same tool for the SkyWater SKY130 PDK
+
+---
+
+*Built for the open-source silicon community. If you find it useful, please star the repository.*
